@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>強制朝活 - 運動しないと止まらないアラーム</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Segoe UI', sans-serif;
+      background: #0D1117;
+      color: #E6EDF3;
+      line-height: 1.8;
+    }
+    .hero {
+      text-align: center;
+      padding: 80px 20px 60px;
+      background: linear-gradient(180deg, #1A1F2E 0%, #0D1117 100%);
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, #FF6B35, #FFD700);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      font-size: 1.2em;
+      color: #8B949E;
+      max-width: 600px;
+      margin: 0 auto 32px;
+    }
+    .badge {
+      display: inline-block;
+      margin-top: 16px;
+    }
+    .badge img {
+      height: 54px;
+    }
+    .section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+    .section h2 {
+      font-size: 1.8em;
+      margin-bottom: 24px;
+      color: #FFD700;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+    }
+    .feature-card {
+      background: #161B22;
+      border-radius: 16px;
+      padding: 24px;
+      border: 1px solid #21262D;
+    }
+    .feature-card .icon {
+      font-size: 2em;
+      margin-bottom: 12px;
+    }
+    .feature-card h3 {
+      font-size: 1.1em;
+      margin-bottom: 8px;
+      color: #E6EDF3;
+    }
+    .feature-card p {
+      color: #8B949E;
+      font-size: 0.95em;
+    }
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: 28px;
+    }
+    .step-number {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      background: #FF6B35;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    .step-content h3 {
+      margin-bottom: 4px;
+    }
+    .step-content p {
+      color: #8B949E;
+    }
+    .privacy-note {
+      background: #161B22;
+      border-radius: 16px;
+      padding: 24px;
+      border: 1px solid #21262D;
+      margin-top: 24px;
+    }
+    .privacy-note p {
+      color: #8B949E;
+      font-size: 0.95em;
+    }
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      border-top: 1px solid #21262D;
+      color: #8B949E;
+      font-size: 0.9em;
+    }
+    footer a {
+      color: #FFD700;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <h1>強制朝活</h1>
+    <p>運動しないと止まらない目覚ましアプリ。AIがあなたの動きをリアルタイムで検知し、朝の運動習慣を強制的に作ります。</p>
+    <a class="badge" href="https://apps.apple.com/app/id6759155359">
+      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Storeからダウンロード">
+    </a>
+  </div>
+
+  <div class="section">
+    <h2>機能紹介</h2>
+    <div class="features">
+      <div class="feature-card">
+        <div class="icon">🏋️</div>
+        <h3>AI運動検知</h3>
+        <p>カメラでスクワット・腕立て伏せ・バーピーをリアルタイム検知。ウェアラブル不要で正確にカウントします。</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">📖</div>
+        <h3>勉強ミッション</h3>
+        <p>本やペンをカメラに映すことでアラームを解除。朝の読書・勉強習慣も作れます。</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🔊</div>
+        <h3>止められないアラーム</h3>
+        <p>ミッションを達成するまで最大音量でアラームが鳴り続けます。二度寝を強制的に防止します。</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🔥</div>
+        <h3>連続記録 &amp; バッジ</h3>
+        <p>連続起床日数を記録。3日、7日、14日、50日、100日でバッジを獲得できます。</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">📊</div>
+        <h3>達成統計</h3>
+        <p>カレンダー表示で達成履歴を確認。成功率やミッション内訳でモチベーションを維持。</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🎵</div>
+        <h3>アラーム音カスタマイズ</h3>
+        <p>プリセット音源から選択、またはデバイス内の好きな音楽をアラーム音に設定できます。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>使い方</h2>
+    <div class="step">
+      <div class="step-number">1</div>
+      <div class="step-content">
+        <h3>アラームを設定</h3>
+        <p>起床時刻とミッション（運動 or 勉強）を選択します。</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-number">2</div>
+      <div class="step-content">
+        <h3>おやすみ</h3>
+        <p>「おやすみ」ボタンでスリープモードへ。アプリを開いたまま就寝してください。</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-number">3</div>
+      <div class="step-content">
+        <h3>起きて運動！</h3>
+        <p>アラームが鳴ったら、カメラの前で運動してアラームを解除しましょう。</p>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-number">4</div>
+      <div class="step-content">
+        <h3>おはよう！</h3>
+        <p>ミッション達成！すっきり目覚めて、良い一日のスタートです。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>プライバシー</h2>
+    <div class="privacy-note">
+      <p>カメラ映像はすべてデバイス上のAIで処理され、サーバーへの送信や保存は一切行いません。運動データもすべてデバイス内に保存されます。</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      <a href="support.html">サポート</a> &nbsp;|&nbsp;
+      <a href="privacy.html">プライバシーポリシー</a> &nbsp;|&nbsp;
+      <a href="../en/">English</a>
+    </p>
+    <p style="margin-top: 12px;">&copy; 2025 ForcedWake Studio. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
